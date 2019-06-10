@@ -3,11 +3,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Lam%20&amp;%20Rodrigues/Documents/NetBeansProjects/Gestion_des_comptes_rendus/src/gestion_des_comptes_rendus/main/index.fxml</file>
             <file>file:/C:/Users/Lam%20&amp;%20Rodrigues/Documents/NetBeansProjects/Gestion_des_comptes_rendus/src/gestion_des_comptes_rendus/objets/Medicament.java</file>
-            <file>file:/C:/Users/Lam%20&amp;%20Rodrigues/Documents/NetBeansProjects/Gestion_des_comptes_rendus/src/gestion_des_comptes_rendus/main/connexionController.java</file>
+            <file>file:/C:/Users/Lam%20&amp;%20Rodrigues/Documents/NetBeansProjects/Gestion_des_comptes_rendus/src/gestion_des_comptes_rendus/rapportVisite/formRapportVisite.fxml</file>
+            <file>file:/C:/Users/Lam%20&amp;%20Rodrigues/Documents/NetBeansProjects/Gestion_des_comptes_rendus/src/gestion_des_comptes_rendus/praticien/formPraticien.fxml</file>
+            <file>file:/C:/Users/Lam%20&amp;%20Rodrigues/Documents/NetBeansProjects/Gestion_des_comptes_rendus/src/gestion_des_comptes_rendus/praticien/FormPraticienController.java</file>
+            <file>file:/C:/Users/Lam%20&amp;%20Rodrigues/Documents/NetBeansProjects/Gestion_des_comptes_rendus/src/gestion_des_comptes_rendus/medicament/FormMedicamentController.java</file>
             <file>file:/C:/Users/Lam%20&amp;%20Rodrigues/Documents/NetBeansProjects/Gestion_des_comptes_rendus/src/gestion_des_comptes_rendus/main/Gestion_des_comptes_rendus.java</file>
-            <file>file:/C:/Users/Lam%20&amp;%20Rodrigues/Documents/NetBeansProjects/Gestion_des_comptes_rendus/src/gestion_des_comptes_rendus/objets/Connexion.java</file>
+            <file>file:/C:/Users/Lam%20&amp;%20Rodrigues/Documents/NetBeansProjects/Gestion_des_comptes_rendus/src/gestion_des_comptes_rendus/visiteur/FormVisiteurController.java</file>
+            <file>file:/C:/Users/Lam%20&amp;%20Rodrigues/Documents/NetBeansProjects/Gestion_des_comptes_rendus/src/gestion_des_comptes_rendus/objets/CompteRendu.java</file>
+            <file>file:/C:/Users/Lam%20&amp;%20Rodrigues/Documents/NetBeansProjects/Gestion_des_comptes_rendus/src/gestion_des_comptes_rendus/rapportVisite/FormRapportVisiteController.java</file>
+            <file>file:/C:/Users/Lam%20&amp;%20Rodrigues/Documents/NetBeansProjects/Gestion_des_comptes_rendus/src/gestion_des_comptes_rendus/visiteur/formVisiteur.fxml</file>
         </group>
     </open-files>
 </project-private>

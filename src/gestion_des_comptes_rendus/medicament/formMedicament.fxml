@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.TitledPane?>
@@ -9,8 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<TitledPane  text="Médicaments" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" 
-             fx:controller="gestion_des_comptes_rendus.medicament.FormMedicamentController">
+<TitledPane text="Médicaments" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestion_des_comptes_rendus.medicament.FormMedicamentController">
     <content>
         <AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="600.0">
             <children>
@@ -26,38 +26,33 @@
                             </children>
                         </HBox>
                         <HBox prefHeight="47.0" prefWidth="540.0">
+                     <children>
+                        <ComboBox fx:id="comboBoxMedicament" prefHeight="25.0" prefWidth="550.0" promptText="Nom commercial du médicament" />
+                     </children>
+                        </HBox>
+                        <HBox prefHeight="47.0" prefWidth="540.0">
                             <children>
-                                <TextField prefHeight="25.0" prefWidth="555.0" promptText="Dépôt légal" />
+                                <TextField fx:id="depotLegMedicament" prefHeight="25.0" prefWidth="555.0" promptText="Dépôt légal" />
                             </children>
                         </HBox>
                         <HBox prefHeight="47.0" prefWidth="540.0">
                             <children>
-                                <TextField prefHeight="25.0" prefWidth="592.0" promptText="Nom commercial" />
-                            </children>
-                        </HBox>
-                        <HBox prefHeight="47.0" prefWidth="540.0">
-                            <children>
-                                <TextField prefHeight="25.0" prefWidth="586.0" promptText="Famille" />
+                                <TextField fx:id="familleMedicament" prefHeight="25.0" prefWidth="586.0" promptText="Famille" />
                             </children>
                         </HBox>
                         <HBox prefHeight="158.0" prefWidth="540.0">
                             <children>
-                                <TextField prefHeight="131.0" prefWidth="545.0" promptText="Composition" />
+                                <TextField fx:id="compoMedicament" prefHeight="131.0" prefWidth="545.0" promptText="Composition" />
                             </children>
                         </HBox>
                         <HBox prefHeight="158.0" prefWidth="540.0">
                             <children>
-                                <TextField prefHeight="131.0" prefWidth="560.0" promptText="Effets" />
+                                <TextField fx:id="effetsMedicament" prefHeight="131.0" prefWidth="560.0" promptText="Effets" />
                             </children>
                         </HBox>
                         <HBox prefHeight="158.0" prefWidth="540.0">
                             <children>
-                                <TextField prefHeight="131.0" prefWidth="568.0" promptText="Contre indication" />
-                            </children>
-                        </HBox>
-                        <HBox prefHeight="47.0" prefWidth="540.0">
-                            <children>
-                                <TextField prefHeight="25.0" prefWidth="559.0" promptText="Prix échantillon" />
+                                <TextField fx:id="contreIndicMedicament" prefHeight="131.0" prefWidth="568.0" promptText="Contre indication" />
                             </children>
                         </HBox>
                         <HBox prefHeight="47.0" prefWidth="540.0">

@@ -5,6 +5,7 @@
  */
 package gestion_des_comptes_rendus.main;
 
+import gestion_des_comptes_rendus.objets.Connexion;
 import java.net.URL;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -41,6 +42,9 @@ public class connexionController implements Initializable {
     private TextField login;
     @FXML
     private PasswordField password;
+    
+    //ID
+    public static String idVisiteur;
 
     @Override // This method is called by the FXMLLoader when initialization is complete
     public void initialize(URL fxmlFileLocation, ResourceBundle resources) {
@@ -52,34 +56,24 @@ public class connexionController implements Initializable {
         loginbtn.setOnAction(new EventHandler<ActionEvent>() {
 
             public void handle(ActionEvent event) {
-                String url = "jdbc:mysql://localhost/gsb_valide";
-                String log = "root";
-                String mdp = "";
+                Connexion co = new Connexion();
                 String loginContenu = login.getText();
                 String passwordContenu = password.getText();
 
-                //String url = "jdbc:mysql://172.16.0.102:3307/gsb_valide";
-                //String log = "groupe5";
-                //String mdp = "rootroot";
-                
-                //Connection
-                Connection c;
-                Statement st;
                 //View
                 Stage stage;
                 Parent root;
 
                 try {
-                    Class.forName("com.mysql.jdbc.Driver");
-                    c = (Connection) DriverManager.getConnection(url, log, mdp);
-                    st = (Statement) c.createStatement();
+                    co.seConnecter();
+                    Connection c = co.getC();
+                    Statement st = co.getSt();
                     ResultSet resultIdPwdByLogin = st.executeQuery("SELECT id, mdp FROM visiteur WHERE login='" + loginContenu + "'");
 
-                    System.out.println(resultIdPwdByLogin);
                     while (resultIdPwdByLogin.next()) {
-                        String id = resultIdPwdByLogin.getString("id");
+                        idVisiteur = resultIdPwdByLogin.getString("id");
                         String mdpUser = resultIdPwdByLogin.getString("mdp");
-                        
+
                         if (event.getSource() == loginbtn && passwordContenu.equals(mdpUser)) {
                             //get reference to the button's stage         
                             stage = (Stage) loginbtn.getScene().getWindow();
@@ -100,7 +94,8 @@ public class connexionController implements Initializable {
                 }
 
             }
-        });
+        }
+        );
     }
 
 }

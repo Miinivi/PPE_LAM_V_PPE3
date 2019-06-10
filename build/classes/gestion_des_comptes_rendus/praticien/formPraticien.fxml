@@ -3,14 +3,15 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.TitledPane?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<TitledPane text="Praticiens" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" 
-            fx:controller="gestion_des_comptes_rendus.praticien.FormPraticienController">
+<TitledPane text="Praticiens" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestion_des_comptes_rendus.praticien.FormPraticienController">
     <content>
         <AnchorPane id="AnchorPane" prefHeight="800" prefWidth="600">
             <children>
@@ -27,15 +28,39 @@
                         </HBox>
                         <HBox prefHeight="47.0" prefWidth="540.0">
                             <children>
-                                <ComboBox prefHeight="25.0" prefWidth="580.0" promptText="Choisissez un praticien" />
+                                <ComboBox fx:id="comboBoxPraticien" prefHeight="25.0" prefWidth="580.0" promptText="Choisissez un praticien" />
                             </children>
                         </HBox>
-                        <HBox prefHeight="297.0" prefWidth="540.0" />
-                        <HBox prefHeight="297.0" prefWidth="540.0" />
+                        <HBox prefHeight="47.0" prefWidth="540.0">
+                            <children>
+                                <TextField fx:id="nomPraticien" prefHeight="25.0" prefWidth="258.0" promptText="Nom" />
+                                <Pane prefHeight="47.0" prefWidth="27.0" />
+                                <TextField fx:id="prenomPraticien" prefHeight="25.0" prefWidth="258.0" promptText="Prénom" />
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="191.0" prefWidth="513.0">
+                            <children>
+                                <TextField fx:id="adressePraticien" prefHeight="170.0" prefWidth="513.0" promptText="Adresse" />
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="47.0" prefWidth="540.0">
+                            <children>
+                                <TextField fx:id="cpPraticien" prefHeight="25.0" prefWidth="258.0" promptText="Code postal" />
+                                <Pane prefHeight="47.0" prefWidth="27.0" />
+                                <TextField fx:id="villePraticien" prefHeight="25.0" prefWidth="258.0" promptText="Ville" />
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="47.0" prefWidth="540.0">
+                            <children>
+                                <TextField fx:id="professionPraticien" prefHeight="25.0" prefWidth="258.0" promptText="Profession" />
+                                <Pane prefHeight="47.0" prefWidth="27.0" />
+                                <TextField fx:id="lieuTravPraticien" prefHeight="25.0" prefWidth="258.0" promptText="Lieu de travail" />
+                            </children>
+                        </HBox>
                         <HBox prefHeight="43.0" prefWidth="513.0">
                             <children>
                                 <HBox prefHeight="40.0" prefWidth="444.0" />
-                                <Button fx:id="precedent" text="Précédent"/>
+                                <Button fx:id="precedent" text="Précédent" />
                             </children>
                         </HBox>
                     </children>
